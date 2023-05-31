@@ -1,0 +1,29 @@
+@import "./index";
+@import "./contacto";
+@import "./menu" ;
+@import "./sobrenosotros";
+@import "./ubicacion";
+
+    body
+    header h1{margin: 0% auto;
+        text-align: center;
+        font-size: 2rem;
+        color: orangered;}
+        header h2{text-align: center;
+            font-size: 2rem;
+            color: orangered;}
+        header{background-color:goldenrod;}
+        
+        main{background-image:url(../imagenes/fondomain.jpg);
+        color: black;}
+        footer{background-color: goldenrod;
+        color: orangered;} 
+       
+       
+        .footer h4{text-align: center;}
+        .navbar-custom {
+            background-color: orangered;
+            color: goldenrod;}
+            .navbar-custom {
+                background-color: orangered;
+                color: goldenrod;}            

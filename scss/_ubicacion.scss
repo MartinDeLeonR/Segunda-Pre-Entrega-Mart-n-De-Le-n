@@ -1,0 +1,31 @@
+.navbar-custom {
+    background-color: orangered;
+    color: goldenrod;}
+    .gridubicacion {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . . ."
+          "ubicaciontx ubicaciontx ubicacionmaps ubicacionmaps"
+          "ubicaciontx ubicaciontx ubicacionmaps ubicacionmaps"
+          ". . . .";
+      }
+      
+      .ubicaciontx { grid-area: ubicaciontx; font-size: 30px;  color: black;}
+      .ubicaciontx { display: flex; justify-content: center;
+    align-items: center; }
+      .ubicacionmaps { grid-area: ubicacionmaps; }
+      @media (max-width: 420px){ .gridubicacion {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 3px 4px; 
+        grid-template-areas: 
+          "ubicaciontx"
+          "ubicacionmaps"; 
+        align-content: stretch; 
+        justify-items: center; 
+        font-size:  15px;
+    }}
